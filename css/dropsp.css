@@ -1,0 +1,31 @@
+.dropsp {
+    background-color: lightgrey;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    left: 44%;
+    border-radius: 1em;
+    border-top-right-radius: 0.2em;
+    opacity: 0;
+    animation: drops 1s linear infinite;
+}
+
+.dropsp:nth-child(2) {
+    left: 42%;
+    animation-delay: 0.1;
+}
+
+@keyframes dropsp {
+    0% {
+        opacity: 0.2;
+        transform: translateY(0)rotate(-40deg);
+    }
+    20% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(75px)rotate(-40deg);
+        opacity: 1;
+    }
+}
